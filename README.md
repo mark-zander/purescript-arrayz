@@ -1,8 +1,14 @@
-# purescript-geoalg
-Projective Geometric Algebra implemented in Purescript.
+# purescript-arrayz
 
-Implementation of:
-http://projectivegeometricalgebra.org/wiki/index.php?title=Main_Page
+Array utilitise that have not yet made it to Purescript.
 
-This implementation has no optimizations, all operations are carried out on the full 16 elements.
+## ArrayIx
 
+Indexing of fixed length arrays with a phantom type of a
+`BoundedEnum` determining the size of the array. All
+indexing into the array comes from this `BoundedEnum` type.
+
+## ZipArray
+
+Just like `ZipList` but since this isn't a an infinite data
+structure, a `pure` function can not be easily defined.
